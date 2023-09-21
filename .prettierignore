@@ -1,0 +1,6 @@
+.cache
+public
+.yarn
+.idea
+.vscode
+*.svg

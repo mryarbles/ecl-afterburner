@@ -5,8 +5,11 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
-    /* Bundler mode */
+    "include": ["src/**/*"],
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    } /* Bundler mode */,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
