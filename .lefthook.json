@@ -1,0 +1,34 @@
+{
+  "colors": true,
+  "pre-push": {
+    "parallel": true,
+    "commands": {
+      "lint": {
+        "root": "src/",
+        "skip": ["merge", "rebase"],
+        "glob": "*.{js,ts,jsx,tsx,mjs,cjs}",
+        "run": "yarn lint --no-error-on-unmatched-pattern {push_files}"
+      },
+      "prettier": {
+        "root": "src/",
+        "glob": "*.{js,ts,jsx,tsx,mjs,cjs,css,scss,html,md,json,yml}",
+        "run": "yarn prettier --no-error-on-unmatched-pattern --ignore-unknown --write {push_files}"
+      },
+      "test": {
+        "root": "src/",
+        "run": "yarn test"
+      }
+    }
+  },
+  "pre-commit": {
+    "parallel": true,
+    "commands": {
+      "prettier": {
+        "root": "src/",
+        "skip": ["merge", "rebase"],
+        "glob": "*.{js,ts,jsx,tsx,mjs,cjs,css,scss,html,md,json,yml}",
+        "run": "yarn prettier --no-error-on-unmatched-pattern --ignore-unknown --write {staged_files}"
+      }
+    }
+  }
+}
