@@ -1,6 +1,6 @@
 import { expect, test, describe } from 'vitest';
 import LoginPage from './LoginPage';
-import {render, screen} from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 
 describe('modules.auth.LoginPage', () => {
   it('it should render', async () => {

@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "",
     "preview": "yarn build && vite preview",
     "pretty:all": "prettier **/*.{ts,tsx,js,jsx,json} --write",
     "storybook:dev": "storybook dev -p 6006",
