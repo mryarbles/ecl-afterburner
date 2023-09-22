@@ -1,0 +1,11 @@
+build/
+dist/
+dist-debug/
+node_modules/
+*.min.js
+*.mock.js
+packages.json
+tsconfig.json
+vite.config.ts
+vite.test.setup.ts
+
