@@ -13,6 +13,10 @@ Currently, two official plugins are available.
 
 We are using the former babel plugin.
 
+## Tailwind
+
+Prettier plugin https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+
 ### Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:

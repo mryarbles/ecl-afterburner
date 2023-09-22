@@ -1,8 +1,8 @@
 import 'vitest-localstorage-mock';
 import 'jest-extended/all';
-import { afterEach } from 'vitest';
-import { cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/vitest';
+import { afterEach, afterAll } from 'vitest';
+import { cleanup } from '@testing-library/react';
 
 // Configuring vitest with @testing library
 // https://www.robinwieruch.de/vitest-react-testing-library/
@@ -11,6 +11,11 @@ import '@testing-library/jest-dom/vitest';
 afterEach(() => {
   cleanup();
 });
+
+afterAll(() => {
+  console.log('afterAll finished');
+  // cleanupJsDom()();
+})
 
 // expect.extend
 // https://vitest.dev/guide/extending-matchers.html
