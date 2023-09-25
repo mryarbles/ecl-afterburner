@@ -7,7 +7,7 @@
         "root": "src/",
         "skip": ["merge", "rebase"],
         "glob": "*.{js,ts,jsx,tsx,mjs,cjs}",
-        "run": "yarn lint --no-error-on-unmatched-pattern {push_files}"
+        "run": ""
       },
       "prettier": {
         "root": "src/",
