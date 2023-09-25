@@ -4,16 +4,27 @@
 - [Testing](./docs/TESTING.md)
 - [Code Style Guide](./docs/CODE_STYLE_GUIDE.md)
 
-## Vite 
+## Getting Started
+1. If you have not installed nodejs.
+   -The easiest way is through nvm
+- Install nvm ```npm install nvm -g```
+- Use the correct version outlined in .nvmrc by executing ```nvm use```
+2. [Install yarn](https://yarnpkg.com/getting-started/install)
+3. Execute  `yarn install` ;
+4. For local development
+- Start local server ```yarn start```
 
-Currently, two official plugins are available.
+## Vite 
+Afterburner uses [Vite](https://vitejs.dev/) for building the application and a development server.
+It has two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-We are using the former babel plugin.
+We are using the babel plugin.
 
 ## Tailwind
+Afterburner will utilize [Tailwind](https://tailwindcss.com/) for all styling of custom components.
 
 Prettier plugin https://github.com/tailwindlabs/prettier-plugin-tailwindcss
 
